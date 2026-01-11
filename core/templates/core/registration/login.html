@@ -16,13 +16,7 @@
     <div class="container d-flex justify-content-center">
         <div class="card card-login p-4 bg-white">
             <div class="card-body">
-                <div class="d-flex justify-content-start mb-2">
-                    <a href="{% url 'home' %}" class="text-secondary text-decoration-none fs-4" title="Volver al inicio">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                        </svg>
-                    </a>
-                </div>
+                
 
                 <div class="text-center mb-4">
                     <h3 class="fw-bold text-primary">BizAdmin</h3>
@@ -52,7 +46,7 @@
                 </form>
                 
                 <div class="text-center mt-3">
-                    <small class="text-muted">¿No tienes cuenta? Contacta al administrador.</small>
+                    <p class="small">¿No tienes cuenta? <a href="{% url 'register' %}">Regístrate aquí</a></p>
                 </div>
             </div>
         </div>
