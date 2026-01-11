@@ -116,3 +116,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+AUTH_USER_MODEL = 'core.User'
+
+# Redirige aquí tras iniciar sesión correctamente
+LOGIN_REDIRECT_URL = 'home' 
+# Redirige aquí tras cerrar sesión
+LOGOUT_REDIRECT_URL = 'login' 
+# URL de la página de login
+LOGIN_URL = 'login'
