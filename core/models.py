@@ -3,15 +3,14 @@ from django.db import models
 
 # Create your models here.
 class User(AbstractUser):
-    # Aquí puedes añadir campos personalizados para tu negocio
-    email = models.EmailField(unique=True, verbose_name='Correo electrónico')
+    email = models.EmailField(unique=True, verbose_name='Correo electrónico') # Hacemos el email único obligatorio
 
-    class Meta:
-        verbose_name = 'Usuario'
-        verbose_name_plural = 'Usuarios'
+    # Esto le dice a Django que el campo para loguearse es el email
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username'] # 'username' pasa a ser secundario
 
     def __str__(self):
-        return self.username
+        return self.email
 
 
 class Cliente(models.Model):
