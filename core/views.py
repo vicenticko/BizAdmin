@@ -8,6 +8,7 @@ from .forms import RegistroForm
 def home(request):
     return render(request, 'core/home.html')
 
+@login_required
 def base(request):
     return render(request, 'core/base.html')
 
@@ -26,3 +27,7 @@ def register(request):
         form = RegistroForm()
     
     return render(request, 'core/registration/register.html', {'form': form})
+
+@login_required
+def perfil(request):
+    return render(request, 'core/perfil.html')
