@@ -12,9 +12,6 @@ def home(request):
 def base(request):
     return render(request, 'core/base.html')
 
-def login(request):
-    return render(request, 'core/registration/login.html')
-
 def register(request):
     if request.method == 'POST':
         form = RegistroForm(request.POST)

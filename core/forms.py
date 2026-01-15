@@ -7,4 +7,4 @@ class RegistroForm(UserCreationForm):
         model = User
         # Aquí definimos qué campos queremos pedir en el registro
         # La contraseña y confirmación de contraseña ya vienen incluidas por UserCreationForm
-        fields = ['username', 'email']
+        fields = ['username', 'first_name', 'last_name', 'email']
