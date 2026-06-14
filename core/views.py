@@ -28,3 +28,7 @@ def register(request):
 @login_required
 def perfil(request):
     return render(request, 'core/perfil.html')
+
+@login_required
+def configuracion(request):
+    return render(request, 'core/configuracion.html')    
