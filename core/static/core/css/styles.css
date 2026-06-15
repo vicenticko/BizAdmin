@@ -62,3 +62,31 @@ body.sb-sidenav-toggled #sidebar-wrapper {
     background-color: rgba(255,255,255,0.1);
     color: white;
 }
+
+/* Cards and UI elements */
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.75rem;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 1rem 1.25rem;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.btn-primary-custom {
+    background-color: var(--dark-sidebar);
+    border-color: var(--dark-sidebar);
+    color: white;
+    padding: 0.6rem 1.5rem;
+}
+
+.btn-primary-custom:hover {
+    background-color: #1a3a96;
+    color: white;
+}
